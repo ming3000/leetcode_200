@@ -13,7 +13,7 @@ func searchMatrix(matrix [][]int, target int) bool {
 			column--
 		} else {
 			row++
-		}
+		} // else>>
 	} // for>
 
 	return false
