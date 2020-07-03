@@ -2,7 +2,7 @@ package bst
 
 import "leetcode_200/common"
 
-func lowestCommonAncestor(root, p, q *common.TreeNode) *common.TreeNode {
+func lowestCommonAncestor235(root, p, q *common.TreeNode) *common.TreeNode {
 	node := root
 	for node != nil {
 		if node.Val < p.Val && node.Val < q.Val {
