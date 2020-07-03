@@ -18,3 +18,12 @@ func inorderTraversal(root *common.TreeNode) []int {
 
 	return ret
 }
+
+func inOrder(root *common.TreeNode, nums *[]int) {
+	if root == nil {
+		return
+	}
+	inOrder(root.Left, nums)
+	*nums = append(*nums, root.Val)
+	inOrder(root.Right, nums)
+}
